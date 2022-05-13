@@ -8,4 +8,9 @@ class CompaniesController < ApplicationController
     @company = Company.find_by({ "id" => params["id"] })
   end
 
+  def new
+    @company = Company.new
+  end
+
+  
 end
