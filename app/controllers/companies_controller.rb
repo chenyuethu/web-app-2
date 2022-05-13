@@ -2,6 +2,10 @@ class CompaniesController < ApplicationController
 
   # TODO:
   # def index
+  def index
+  @companies = Company.all
+  end
+
   # end
 
   def show
