@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   resources "companies"
   resources "contacts"
   resources "posts"
+  get "/", { :controller => "companies", :action => "index"}
+  
+
 end
